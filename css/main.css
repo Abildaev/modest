@@ -864,6 +864,7 @@ ul {
   width: 100%;
   color: #fff;
   background: #23b7a4;
+  transition: 0.5s;
 }
 @media screen and (min-width: 768px) {
   .contact__btn {
@@ -876,6 +877,9 @@ ul {
     margin: 0;
     width: 35%;
   }
+}
+.contact__btn:hover {
+  background: #3A454D;
 }
 .contact__info {
   margin-top: 3.4375rem;
