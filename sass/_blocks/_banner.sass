@@ -5,7 +5,7 @@
 	background-size: cover
 	display: flex
 	flex-direction: column
-	justify-content: center
+	justify-content: center	
 	text-align: center
 	z-index: 0
 	padding: rem(20px) 0
@@ -28,20 +28,10 @@
 		+tablet
 			width: 55%
 	
-	&__btn_wrap
-		display: flex
-		flex-direction: column
-		align-items: center
-		justify-content: center
-		+phone
-			flex-direction: row
-		+tablet
-			margin-top: rem(10px)
-			justify-content: flex-start
 			
 
 	&__btn
-		margin-top: rem(20px)
+		margin-top: rem(30px)
 		text-transform: uppercase
 		color: #fff
 		padding: rem(17px)
@@ -63,3 +53,47 @@
 
 		+laptop
 			width: 15%
+.dot-container
+	padding: 0 rem(15px)
+	position: relative
+.dot-list
+	display: none
+	+tablet
+		display: block
+		position: absolute
+		top: rem(-40px)
+		right: rem(15px)
+.dot
+	display: inline-block
+	cursor: pointer
+	width: rem(13px)
+	height: rem(13px)
+	border: 2px solid #fff
+	border-radius: 50%
+	box-sizing: border-box
+	margin-left: rem(9px)
+	transition: 0.3s
+
+
+.active, .dot:hover
+	background: $WhiteColor
+
+.mySlides
+	transition: 0.5s
+	display: none
+
+.fade
+	animation-name: fade
+	animation-duration: 0.5s
+
+@-webkit-keyframes fade
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+@keyframes fade
+	from
+		opacity: 0.4
+	to
+		opacity: 1

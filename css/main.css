@@ -114,6 +114,8 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -338,25 +340,8 @@ ul {
     width: 55%;
   }
 }
-.banner__btn_wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 480px) {
-  .banner__btn_wrap {
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 768px) {
-  .banner__btn_wrap {
-    margin-top: 0.625rem;
-    justify-content: flex-start;
-  }
-}
 .banner__btn {
-  margin-top: 1.25rem;
+  margin-top: 1.875rem;
   text-transform: uppercase;
   color: #fff;
   padding: 1.0625rem;
@@ -388,6 +373,65 @@ ul {
   }
 }
 
+.dot-container {
+  padding: 0 0.9375rem;
+  position: relative;
+}
+
+.dot-list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .dot-list {
+    display: block;
+    position: absolute;
+    top: -2.5rem;
+    right: 0.9375rem;
+  }
+}
+
+.dot {
+  display: inline-block;
+  cursor: pointer;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-left: 0.5625rem;
+  transition: 0.3s;
+}
+
+.active, .dot:hover {
+  background: #fff;
+}
+
+.mySlides {
+  transition: 0.5s;
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 960px) {
   .about__firstBlock {
     width: 57.0175438596%;
@@ -899,7 +943,7 @@ ul {
   }
 }
 .contact__btn:hover {
-  background: #3A454D;
+  background: #3a454d;
 }
 .contact__info {
   margin-top: 3.4375rem;
