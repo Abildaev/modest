@@ -1,15 +1,18 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Myriad Pro";
-  src: url("../fonts/myriadpro/myriadpro_regular/MyriadPro-Regular.ttf") format("truetype");
-  src: url("../fonts/myriadpro/myriadpro_regular/MyriadPro-Regular.woff") format("woff");
-  src: url("../fonts/myriadpro/myriadpro_regular/MyriadPro-Regular.otf") format("opentype");
-  src: url("../fonts/myriadpro/myriadpro_regular/MyriadPro-Regular.svg") format("svg");
+  src: url("../fonts/myriadpro/myriadpro_regular/MyriadProRegular.eot") format("embedded-opentype");
+  src: url("../fonts/myriadpro/myriadpro_regular/MyriadProRegular.svg") format("svg");
+  src: url("../fonts/myriadpro/myriadpro_regular/MyriadProRegular.ttf") format("truetype");
+  src: url("../fonts/myriadpro/myriadpro_regular/MyriadProRegular.woff") format("woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "Myriad Pro";
-  src: url("../fonts/myriadpro/myriadpro_light/Myriad-Pro-Light.otf");
+  src: url("../fonts/myriadpro/myriadpro_light/MyriadProLight.eot") format("embedded-opentype");
+  src: url("../fonts/myriadpro/myriadpro_light/MyriadProLight.svg") format("svg");
+  src: url("../fonts/myriadpro/myriadpro_light/MyriadProLight.ttf") format("truetype");
+  src: url("../fonts/myriadpro/myriadpro_light/MyriadProLight.woff") format("woff");
   font-weight: 200;
 }
 @font-face {
@@ -100,7 +103,7 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: "Myriad Pro";
-  font-weight: 400;
+  font-weight: 200;
 }
 
 h1, h2, h3, h4 {
@@ -766,6 +769,7 @@ ul {
   }
 }
 .services__title {
+  font-weight: 400;
   margin-top: 2.1875rem;
   margin-bottom: 1.875rem;
   font-size: 1.0625rem;
